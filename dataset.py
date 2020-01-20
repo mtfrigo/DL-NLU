@@ -7,6 +7,17 @@ from os import path
 
 import pickle
 
+# set parameters:
+VOCAB_SIZE = 8000
+MAXLEN = 50
+BATCH_SIZE = 32
+EMBEDDING_DIM = 100
+FILTERS = 250
+KERNEL_SIZE = 3
+HIDDEN_DIM = 100
+EPOCHS = 10
+VALIDATION_SPLIT = 0.2
+
 class DatasetHandler(object):
 
     def __init__(self, dataset):
